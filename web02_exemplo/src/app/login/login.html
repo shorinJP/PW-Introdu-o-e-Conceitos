@@ -1,0 +1,13 @@
+<h3>Login</h3>
+Olá, faça login para acessar sua conta:
+<br><br>
+<h4>{{alerta}}</h4><br><br>
+email: <input type="email" id="email" placeholder="informe seu email" />
+<br>
+senha: <input type="password" id="senha" placeholder="digite sua senha" />
+<br><br>
+<input type="checkbox" id="lembrar">Lembrar meus dados
+<br><br>
+<button (click)="logar();">Entrar</button>
+<br><br>
+<a routerLink="/cadastro">Esqueci minha senha</a> | <a routerLink="/cadastro">Criar nova conta</a>

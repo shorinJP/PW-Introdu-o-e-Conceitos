@@ -1,0 +1,86 @@
+<h3>Cadastro de Cliente</h3>
+Preencha seus dados para criar uma conta em nossa loja:
+<br><br>
+<h4>{{alerta}}</h4><br><br>
+
+<h4>Dados Pessoais</h4>
+nome completo: <input type="text" id="nome" placeholder="digite seu nome completo" />
+<br>
+cpf: <input type="text" id="cpf" placeholder="000.000.000-00" />
+<br>
+data de nascimento: <input type="date" id="dataNasc" />
+<br>
+sexo: 
+<input type="radio" name="sexo" id="masculino" value="M"> Masculino
+<input type="radio" name="sexo" id="feminino" value="F"> Feminino
+<input type="radio" name="sexo" id="outros" value="O"> Outros
+<br><br>
+
+<h4>Dados de Contato</h4>
+email: <input type="email" id="email" placeholder="informe seu email" />
+<br>
+telefone: <input type="tel" id="telefone" placeholder="(00) 00000-0000" />
+<br>
+celular: <input type="tel" id="celular" placeholder="(00) 00000-0000" />
+<br><br>
+
+<h4>Endereço</h4>
+cep: <input type="text" id="cep" placeholder="00000-000" />
+<br>
+endereço: <input type="text" id="endereco" placeholder="rua, número" />
+<br>
+complemento: <input type="text" id="complemento" placeholder="apto/bloco" />
+<br>
+bairro: <input type="text" id="bairro" placeholder="seu bairro" />
+<br>
+cidade: <input type="text" id="cidade" placeholder="sua cidade" />
+<br>
+estado: 
+<select id="estado">
+    <option value="">Selecione...</option>
+    <option value="AC">Acre</option>
+    <option value="AL">Alagoas</option>
+    <option value="AP">Amapá</option>
+    <option value="AM">Amazonas</option>
+    <option value="BA">Bahia</option>
+    <option value="CE">Ceará</option>
+    <option value="DF">Distrito Federal</option>
+    <option value="ES">Espírito Santo</option>
+    <option value="GO">Goiás</option>
+    <option value="MA">Maranhão</option>
+    <option value="MT">Mato Grosso</option>
+    <option value="MS">Mato Grosso do Sul</option>
+    <option value="MG">Minas Gerais</option>
+    <option value="PA">Pará</option>
+    <option value="PB">Paraíba</option>
+    <option value="PR">Paraná</option>
+    <option value="PE">Pernambuco</option>
+    <option value="PI">Piauí</option>
+    <option value="RJ">Rio de Janeiro</option>
+    <option value="RN">Rio Grande do Norte</option>
+    <option value="RS">Rio Grande do Sul</option>
+    <option value="RO">Rondônia</option>
+    <option value="RR">Roraima</option>
+    <option value="SC">Santa Catarina</option>
+    <option value="SP">São Paulo</option>
+    <option value="SE">Sergipe</option>
+    <option value="TO">Tocantins</option>
+</select>
+<br><br>
+
+<h4>Dados de Acesso</h4>
+usuário: <input type="text" id="usuario" placeholder="escolha um nome de usuário" />
+<br>
+senha: <input type="password" id="senha" placeholder="digite sua senha" />
+<br>
+confirmar senha: <input type="password" id="confirmarSenha" placeholder="confirme sua senha" />
+<br><br>
+
+<input type="checkbox" id="termos">Li e aceito os termos e condições de uso
+<br>
+<input type="checkbox" id="ofertas">Desejo receber ofertas e novidades por email
+<br><br>
+
+<button (click)="cadastrar();">Cadastrar</button>
+<br><br>
+<a routerLink="/login">Já tenho uma conta</a>
